@@ -7,8 +7,6 @@ function findLongest (string){
   })
   return Math.max.apply( Math, toLength );
 }
-console.log("should be 8");
-console.log(findLongest("* ******** **** **"))
 
-console.log("should be 10");
-console.log(findLongest("* **** ********** **"))
+console.log("should be 8: ", findLongest("* ******** **** **"))
+console.log("should be 10: ", findLongest("* **** ********** **"))
