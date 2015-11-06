@@ -6,10 +6,14 @@ function divByThree (numb){
       console.log(newNumb);
       go(newNumb)
     }
+    if((numb + 1) %3 == 0){
+      var newNumb = numb +1
+      console.log(newNumb);
+      go(newNumb)
+    }
   }
-  if(numb % 3 == 0){
-    go(numb)
-  };
+  if(numb % 3 == 0) go(numb);
+
   function go(number){
     if(number == 0 || number == 1){
       return 1
@@ -20,4 +24,4 @@ function divByThree (numb){
     }
   }
 };
-console.log(divByThree(100));
+console.log(divByThree(200000));
